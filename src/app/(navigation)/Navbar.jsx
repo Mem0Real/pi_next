@@ -151,10 +151,19 @@ const Navbar = () => {
 							<button
 								className={`btn btn-sm btn-outline-primary capitalize shadow-lg relative flex items-center justify-around p-0.5 mb-2 overflow-hidden rounded-xl group lg:mx-12`}
 							>
-								<span className="px-6 py-1.5 font-semibold text-sm relative transition-all ease-in duration-50 dark:bg-gray-900 rounded-lg group-hover:bg-opacity-0">
+								<span className="px-6 py-1.5 font-semibold text-sm relative transition-all ease-in duration-50 bg-neutral-900 hover:bg-neutral-700 rounded-lg group-hover:bg-opacity-120">
 									{title}
 								</span>
 							</button>
+							{/* <button className="btn btn-sm btn-outline-primary shadow-lg relative flex items-center justify-around p-0.5 mb-2 overflow-hidden text-sm rounded-xl group lg:mx-12">
+								<span
+									className={`${
+										path === pathName ? "btn-active" : ""
+									} ' px-5 relative transition-all ease-in duration-50 bg-neutral-900 hover:bg-neutral-700 rounded-md group-hover:bg-opacity-0'`}
+								>
+									{title}
+								</span>
+							</button> */}
 						</Link>
 					))}
 				</div>

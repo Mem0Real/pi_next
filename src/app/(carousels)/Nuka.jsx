@@ -23,14 +23,6 @@ const Nuka = (props) => {
 				id={name}
 				className="rounded-xl"
 			>
-				{/* <Carousel
-				wrapMode={"wrap"}
-				autoplay={true}
-				autoplayInterval={500}
-				showArrows
-				showDots
-				id={name}
-			> */}
 				<img
 					src={__dirName + "1.jpg"}
 					alt={`${name} 'image'`}
