@@ -2,6 +2,7 @@
 
 // import "../css/index.css";
 // import "../css/home.css";
+import styles from "./home.module.css";
 
 import React, { useState, useEffect } from "react";
 
@@ -260,7 +261,7 @@ const HomePage = () => {
 								</div>
 							</div>
 
-							<ul className="list-roman lg:pl-6">
+							<ul className={`${styles.listRoman} lg:pl-6`}>
 								<li>
 									Refrigerators ranging from carry-ons all the way to
 									distribution size,
@@ -274,7 +275,6 @@ const HomePage = () => {
 						</div>
 
 						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
-							{/* <KitchenCarousel name="kitchen" /> */}
 							<Nuka name="kitchen" />
 						</div>
 					</div>

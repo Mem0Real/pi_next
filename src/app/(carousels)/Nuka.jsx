@@ -2,6 +2,7 @@
 
 import React from "react";
 import Carousel from "nuka-carousel";
+import Image from "next/image";
 
 const Nuka = (props) => {
 	const name = props.name;
@@ -23,7 +24,87 @@ const Nuka = (props) => {
 				id={name}
 				className="rounded-xl"
 			>
-				<img
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "1.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={name === "em" ? __dirName + "2.webp" : __dirName + "2.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "3.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "4.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "5.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "6.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "7.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "8.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "9.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				<div className="h-80 w-96 relative">
+					<Image
+						fill
+						src={__dirName + "10.jpg"}
+						alt={`${name}`}
+						className="object-cover"
+					/>
+				</div>
+				{/* <img
 					src={__dirName + "1.jpg"}
 					alt={`${name} 'image'`}
 					className="object-cover h-80 w-full"
@@ -72,7 +153,7 @@ const Nuka = (props) => {
 					src={__dirName + "10.jpg"}
 					alt={`${name} 'image'`}
 					className="object-cover h-80 w-full"
-				/>
+				/> */}
 			</Carousel>
 		</div>
 	);

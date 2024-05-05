@@ -1,0 +1,12 @@
+.listInside {
+	list-style-position: inside;
+}
+.listDisc {
+	list-style-type: disc;
+}
+.listRoman {
+	list-style-type: upper-roman;
+}
+.listNone {
+	list-style-type: none;
+}
