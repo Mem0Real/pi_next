@@ -55,7 +55,7 @@ const Navbar = () => {
 	return (
 		<nav
 			id="navbar"
-			className={`fixed z-50 w-screen text-gray-400 body-font h-24 transition-all duration-500 backdrop-blur-md
+			className={`fixed z-50 w-screen text-gray-400 body-font h-24 transition-all duration-500 backdrop-blur-md bg-black/10
      ${scrollDirection === "down" ? "-top-32" : "top-0"}`}
 		>
 			{/* Dropdown */}
