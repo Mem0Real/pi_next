@@ -1,0 +1,6 @@
+.spinner-border {
+	border: 0.25em solid;
+	border-right: 0.25em solid transparent;
+	vertical-align: -0.125em;
+	background-color: #000;
+}

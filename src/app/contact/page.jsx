@@ -4,13 +4,16 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 // import "tw-elements";
+import styles from "./contact.module.css";
+import Image from "next/image";
 
 export default function Contact() {
 	const [clientName, setClientName] = useState("");
 	const [clientAddress, setClientAddress] = useState("");
 	const [bodyContent, setBodyContent] = useState("");
 	const [loader, setLoader] = useState(false);
-	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+
+	const __dirName = `/assets/img`;
 
 	const form = useRef();
 	const modal = useRef();
@@ -190,6 +193,7 @@ export default function Contact() {
 							</a>
 						</span>
 
+						{/* Phone No */}
 						<span className="sm:ml-auto flex justify-center items-center w-full text-center sm:justify-start py-5">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -207,6 +211,8 @@ export default function Contact() {
 							</svg>
 							<p>+251911245059</p>
 						</span>
+
+						{/* Contact Form */}
 						<form ref={form} onSubmit={(e) => sendEmail(e)}>
 							<div className="z-50 relative mb-4">
 								<label
@@ -260,23 +266,29 @@ export default function Contact() {
 							</div>
 							<div className="relative mb-4 mx-auto ">
 								<div id="results" className="search-results">
-									{loader ? (
+									{!loader ? (
 										<div className="flex items-center justify-center">
 											<div
-												className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full"
+												className={`${styles.spinnerBorder} animate-spin inline-block w-10 h-10 -mb-3`}
 												role="status"
 											>
-												<span className="visually-hidden">Loading...</span>
+												<Image
+													src="/assets/img/spinner.png"
+													width={200}
+													height={200}
+													alt="Loading..."
+													className="object-cover object-center"
+												/>
 											</div>
 										</div>
 									) : (
 										<div className="flex items-center justify-center">
 											<button
 												id="sendBtn"
-												className="btn lg:px-12 lg:mx-24"
+												className="btn px-5 py-3 lg:px-12 lg:mx-24 bg-neutral-800 rounded-lg text-white"
 												type="submit"
 											>
-												Send
+												SEND
 											</button>
 										</div>
 									)}
