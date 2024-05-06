@@ -100,21 +100,21 @@ export default function Nav({ hidden }) {
 			</div>
 
 			{/* Hamburger */}
-			<div className="relative flex gap-7 justify-end items-center md:hidden text-neutral-800 dark:text-neutral-200 px-4 md:px-2 lg:px-8">
+			<div className="relative flex gap-7 justify-end items-center md:hidden text-neutral-200 px-4 md:px-2 lg:px-8">
 				<button
 					name="menu"
 					onClick={() => setIsOpen(!isOpen)}
 					className="flex items-center py-2 rounded text-black-500 hover:text-black-400 z-50 absolute -top-12"
 				>
 					<svg
-						className={`fill-current h-3 w-3 ${isOpen ? "hidden" : "block"}`}
+						className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
 					</svg>
 					<svg
-						className={`fill-current h-3 w-3 ${isOpen ? "block" : "hidden"}`}
+						className={`fill-current h-5 w-5 ${isOpen ? "block" : "hidden"}`}
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
 					>

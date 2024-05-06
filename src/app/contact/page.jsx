@@ -90,11 +90,10 @@ export default function Contact() {
 						className="mt-32"
 					/>
 				</div>
-
-				<div className="absolute inset-0 bg-gray-300 justify-center items-center h-[40em]">
+				<div className="absolute inset-0 bg-gray-300 justify-center items-center">
 					<button
 						id="contactBtn"
-						className="btn fixed lg:bottom-20 mx-auto mt-12 bottom-10 right-8 rounded-large drop-shadow-lg flex justify-center items-center text-white text-md z-50 px-4 py-3 rounded-lg bg-neutral-900"
+						className="btn fixed lg:bottom-20 mx-auto mt-12 bottom-10 right-1 rounded-large drop-shadow-lg flex justify-center items-center text-white text-md z-50 px-4 py-3 rounded-lg bg-neutral-900"
 						onClick={() => toggleModal()}
 					>
 						Contact Us
@@ -104,12 +103,10 @@ export default function Contact() {
 							<iframe
 								width="100%"
 								height="100%"
-								frameBorder="0"
-								marginHeight="10"
-								marginWidth="10"
 								title="map"
-								scrolling="no"
 								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15762.574794341912!2d38.767084!3d9.004895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x941677a8f60160fe!2sDembel%20City%20Center!5e0!3m2!1sen!2set!4v1665933195534!5m2!1sen!2set"
+								allowfullscreen=""
+								loading="lazy"
 							></iframe>
 						</span>
 					</div>
@@ -121,7 +118,7 @@ export default function Contact() {
 					id="modal"
 					className="z-50 invisible container px-5 mx-auto flex"
 				>
-					<div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col gap-5 md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+					<div className="lg:w-96 md:w-1/2 bg-white rounded-lg p-8 flex flex-col gap-5 md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
 						<button
 							className="btn btn-circle btn-outline btn-error px-3 py-2 rounded-full border border-red-400 hover:bg-red-400 text-red-400 hover:text-neutral-900 transition-all ease-in-out duration-300 mx-auto"
 							onClick={() => toggleModal()}
@@ -143,7 +140,7 @@ export default function Contact() {
 						</button>
 
 						{/* Social Buttons */}
-						<span className="basis-1/4 inline-flex justify-center items-center sm:ml-auto sm:mt-0 mt-4 w-full">
+						<span className="basis-1/4 inline-flex justify-center items-center gap-3 sm:ml-auto sm:mt-0 mt-4 w-full">
 							<a
 								className="cursor-pointer text-gray-500"
 								href="https://facebook.com"
@@ -194,7 +191,7 @@ export default function Contact() {
 						</span>
 
 						{/* Phone No */}
-						<span className="sm:ml-auto flex justify-center items-center w-full text-center sm:justify-start py-5">
+						<span className="flex justify-center items-center gap-3 w-full text-center py-5">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -266,7 +263,7 @@ export default function Contact() {
 							</div>
 							<div className="relative mb-4 mx-auto ">
 								<div id="results" className="search-results">
-									{!loader ? (
+									{loader ? (
 										<div className="flex items-center justify-center">
 											<div
 												className={`${styles.spinnerBorder} animate-spin inline-block w-10 h-10 -mb-3`}
@@ -285,10 +282,10 @@ export default function Contact() {
 										<div className="flex items-center justify-center">
 											<button
 												id="sendBtn"
-												className="btn px-5 py-3 lg:px-12 lg:mx-24 bg-neutral-800 rounded-lg text-white"
+												className="px-3 py-1 lg:px-7 lg:mx-24 bg-neutral-800 rounded-lg text-white"
 												type="submit"
 											>
-												SEND
+												Send
 											</button>
 										</div>
 									)}

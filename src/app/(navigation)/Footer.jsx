@@ -15,7 +15,7 @@ const Footer = () => {
 	const __dirName = `/assets/img`;
 
 	return (
-		<footer className="absolute w-full sm:h-fit z-50 text-gray-400 bg-black font-poppins">
+		<footer className="absolute w-full sm:h-fit z-40 text-gray-400 bg-black font-poppins">
 			<div className="container px-2 mx-auto flex items-center sm:flex-row flex-col">
 				<button className="basis-1/4 start-0 title-font font-medium text-white">
 					<span className={`text-base ${poppins.className}`}>

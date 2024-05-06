@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +13,7 @@ export default function NavbarBase() {
 	const [hidden, setHidden] = useState(false);
 
 	const { scrollY } = useScroll();
+	const path = usePathname();
 
 	function update() {
 		if (scrollY?.current < scrollY?.prev) {
@@ -37,8 +39,10 @@ export default function NavbarBase() {
 				ease: [0.1, 0.25, 0.3, 1],
 				duration: 0.6,
 			}}
-			className="fixed w-full h-[95px] navbar bg-transparent
-      text-neutral-800 dark:text-neutral-200 border-b border-neutral-600/60 backdrop-blur-md shadow-md shadow-cyan-900 z-30 -mt-1"
+			className={`fixed w-full h-[95px] navbar  ${
+				path === "/contact" ? "bg-neutral-900/80" : "bg-transparent"
+			} border-b border-neutral-600/60 backdrop-blur-md shadow-md shadow-cyan-900 z-30 -mt-1
+		`}
 		>
 			<div className="relative md:flex justify-between md:justify-normal items-center w-full text-sm">
 				<Link href="/">
