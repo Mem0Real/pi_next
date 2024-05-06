@@ -40,8 +40,10 @@ export default function NavbarBase() {
 				duration: 0.6,
 			}}
 			className={`fixed w-full h-[95px] navbar  ${
-				path === "/contact" ? "bg-neutral-900/80" : "bg-transparent"
-			} border-b border-neutral-600/60 backdrop-blur-md shadow-md shadow-cyan-900 z-30 -mt-1
+				path === "/contact"
+					? "bg-neutral-900/80 shadow-cyan-900"
+					: "bg-transparent shadow-cyan-900"
+			} border-b border-neutral-600/60 backdrop-blur-md shadow-md z-30
 		`}
 		>
 			<div className="relative md:flex justify-between md:justify-normal items-center w-full text-sm">

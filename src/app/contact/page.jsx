@@ -79,7 +79,7 @@ export default function Contact() {
 	const errorNotify = () => toast.error("Error");
 
 	return (
-		<div className="min-h-screen sm:h-auto bg-home-img7 bg-center bg-cover sm:mt-24">
+		<div className="min-h-screen bg-home-img7 bg-center bg-cover pt-24 bg-neutral-800">
 			<Toaster />
 			<section className="text-gray-600 body-font relative sm:flex">
 				{/* Dember Img */}
@@ -98,7 +98,7 @@ export default function Contact() {
 					>
 						Contact Us
 					</button>
-					<div className="relative h-full lg:w-full">
+					<div className="relative h-full w-full">
 						<span className="z-1">
 							<iframe
 								width="100%"
