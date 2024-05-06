@@ -31,6 +31,8 @@ export default function Services() {
 										src={`${__dirName}/services-img.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">
@@ -52,6 +54,8 @@ export default function Services() {
 										src={`${__dirName}/import1-img.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">
@@ -73,6 +77,8 @@ export default function Services() {
 										src={`${__dirName}/install-img.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">
@@ -97,6 +103,8 @@ export default function Services() {
 										src={`${__dirName}/maintainance-img.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">
@@ -118,6 +126,8 @@ export default function Services() {
 										src={`${__dirName}/Comission2.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">
@@ -138,6 +148,8 @@ export default function Services() {
 										src={`${__dirName}/distribution.jpg`}
 										alt="Service"
 										className="object-cover object-center rounded-t-3xl"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										priority
 									/>
 								</div>
 								<div className="bg-black/80 text-center h-36 rounded-b-3xl text-white w-[350px] flex flex-col justify-center items-center gap-3">

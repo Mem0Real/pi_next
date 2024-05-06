@@ -13,6 +13,7 @@
     "@next/font": "^14.2.3",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^11.1.7",
     "next": "14.2.3",
     "nuka-carousel": "^7.0.0",
     "react": "^18.3.1",
