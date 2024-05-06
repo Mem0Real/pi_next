@@ -93,49 +93,13 @@ const HomePage = () => {
 						Products We Offer
 					</h2>
 				</div>
-
-				{/* <div className="container px-5 mx-auto">
-					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-large">
-							<Nuka name="em" />
-						</div>
-
-						<div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col justify-around items-center">
-							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
-								Electro mechanical Equipment
-							</h1>
-
-							<div className="text-center">
-								<p className="leading-relaxed">
-									It is virtually impossible to list every single
-									electromechanical device. You most likely use this equipment
-									every day, both personally and professionally. <br />
-								</p>
-								<div className="text-lg p-4">
-									Some of the most common devices are used in:
-								</div>
-							</div>
-							<ul className="list-disc mb-12 lg:mb-0">
-								<li>Transportation, such as trains and trams</li>
-								<li>
-									Automobile industry, with Alternators and Electric Motors
-								</li>
-								<li>Motors and other Hydraulic Presses</li>
-								<li>
-									Elevators, Escelators and other Weight-lifting machinery
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div> */}
 				<div className="container px-5 mx-auto">
-					<div className="w-full items-center justify-center lg:mx-36 lg:flex">
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md">
-							{/* <EMCarousel name="em" /> */}
+					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
+						<div className="w-fit overflow-hidden h-fit rounded-md">
 							<Nuka name="em" />
 						</div>
 
-						<div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col justify-around items-center">
+						<div className="lg:w-1/2 w-full lg:pr-10 pt-6 pb-24 flex flex-col justify-around items-center">
 							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
 								Electro Mechanical Machinery Supply and Construction
 							</h1>
@@ -158,125 +122,43 @@ const HomePage = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className="lg:pb-20 pb-8"></div>
 			</section>
 
-			{/* KitchenWare */}
-			{/* <section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-slate-800 bg-cover bg-center bg-fixed">
-				<div className="pt-20"></div>
-				<div className="container px-5 mx-auto">
-					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="lg:w-1/2 w-full lg:pr-10 py-6 mt-6 lg:mt-12 flex flex-col justify-around items-center">
-							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
-								Kitchen-Ware
-							</h1>
+			<section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-kitchen-bg bg-cover bg-center bg-fixed bg-slate-800 px-10 md:px-0">
+				<div className="bg-slate-800 w-full items-center justify-center flex flex-wrap gap-0 md:gap-2 lg:gap-12">
+					<div className="lg:w-1/2 w-full lg:pr-10 pt-6 pb-24 flex flex-col justify-around items-center">
+						<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
+							Kitchen Equipment
+						</h1>
 
-							<div className="text-center">
-								<p className="leading-relaxed">
-									We provide a variety kitchen equipment for home & commercial
-									use especially used in restaurants, hotels and the like with
-									top of the market products possessing the utmost quality on
-									market. <br />
-								</p>
+						<div className="text-center">
+							<p className="leading-relaxed">
+								We provide a variety kitchen equipment for home & commercial use
+								especially used in restaurants, hotels and the like with top of
+								the market products possessing the utmost quality on market.{" "}
+								<br />
+							</p>
 
-								<div className="text-lg py-4 text-start">
-									Some of our most common kitchen-ware products include:
-								</div>
+							<div className="text-lg py-4 text-center">
+								Some of our most common kitchen-ware products include:
 							</div>
-
-							<ul className="list-roman">
-								<li>
-									Refrigirators ranging from carry ons <br />
-									all the way to distribution size,
-								</li>
-								<li className="">
-									Grills supported with a compressed gasoline intake,
-								</li>
-								<li className="">
-									Multi layered electrical stoves that can operate on multiple
-									dishes <br /> at a moment's notice,{" "}
-								</li>
-							</ul>
 						</div>
 
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-large mb-12">
-							<Nuka name="kitchen" />
-						</div>
+						<ul className={`${styles.listRoman} lg:pl-6`}>
+							<li>
+								Refrigerators ranging from carry-ons all the way to distribution
+								size,
+							</li>
+							<li>Grills supported with a compressed gasoline intake,</li>
+							<li>
+								Multi layered electrical stoves that can operate on multiple
+								dishes at a moment's notice
+							</li>
+						</ul>
 					</div>
-				</div>
-			</section> */}
 
-			{/* Home Electronics */}
-			{/* <section
-				className="lg:h-fit lg:pb-12 lg:pt-24 h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
-				style={{ backgroundImage: 'url("/assets/img/em-background.jpg")' }}
-			>
-				<div className="pt-20"></div>
-				<div className="container px-5 mx-auto">
-					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="w-fit overflow-hidden h-fit rounded-md">
-							<Nuka name="home" />
-						</div>
-
-						<div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col justify-evenly items-center">
-							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
-								ICT & Electronics
-							</h1>
-
-							<div className="text-center mb-12 lg:mb-0">
-								<p className="leading-relaxed">
-									We provide all the technologies that make your life better.
-									Computer setup and configuration, routers and surround system
-									aim to transform your home to a smart & modernized safe
-									heaven. Our reliable equipment will ensure our customers'
-									satisfaction and a guaranteed ease of access to all electronic
-									devices within an arm's reach. <br />
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> */}
-
-			<section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-kitchen-bg bg-cover bg-center bg-fixed bg-slate-800">
-				<div className="pt-20"></div>
-				<div className="container px-5 mx-auto bg-slate-800">
-					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="lg:w-1/2 w-full lg:pr-10 py-6 mt-6 lg:mt-12 flex flex-col justify-around items-center">
-							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
-								Kitchen Equipment
-							</h1>
-
-							<div className="text-center">
-								<p className="leading-relaxed">
-									We provide a variety kitchen equipment for home & commercial
-									use especially used in restaurants, hotels and the like with
-									top of the market products possessing the utmost quality on
-									market. <br />
-								</p>
-
-								<div className="text-lg py-4 text-center">
-									Some of our most common kitchen-ware products include:
-								</div>
-							</div>
-
-							<ul className={`${styles.listRoman} lg:pl-6`}>
-								<li>
-									Refrigerators ranging from carry-ons all the way to
-									distribution size,
-								</li>
-								<li>Grills supported with a compressed gasoline intake,</li>
-								<li>
-									Multi layered electrical stoves that can operate on multiple
-									dishes at a moment's notice
-								</li>
-							</ul>
-						</div>
-
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
-							<Nuka name="kitchen" />
-						</div>
+					<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-20 lg:mb-0">
+						<Nuka name="kitchen" />
 					</div>
 				</div>
 			</section>
