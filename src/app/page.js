@@ -84,54 +84,53 @@ const HomePage = () => {
 
 			{/* Electro Mechanical */}
 			<section
-				className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed py-10"
-				style={{ backgroundImage: 'url("/assets/img/em-background.jpg")' }}
+				className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
+				style={{ backgroundImage: 'url("/assets/img/home-background.jpg")' }}
 			>
-				<div className="flex flex-col justify-center items-center w-full md:gap-12 py-12">
-					<div className="flex justify-center items-center text-4xl font-medium underline text-white md:mb-4 lg:mb-0">
-						<h2 className={`font-playfair pb-12 ${playfair.className}`}>
-							Products We Offer
-						</h2>
-					</div>
+				<div className="pt-20"></div>
+				<div className="flex justify-center items-center text-4xl font-medium underline text-white mb-12 lg:mb-0">
+					<h2 className={`font-playfair pb-12 ${playfair.className}`}>
+						Products We Offer
+					</h2>
+				</div>
 
-					<div className="container px-5 mx-auto flex flex-col justify-center items-center">
-						<div className="w-full flex flex-col lg:flex-row lg:gap-2 items-center justify-center">
-							<div className="lg:basis-1/2 w-full overflow-hidden h-fit rounded-md">
-								<SwiperCarousel name="electro" />
-							</div>
+				<div className="container px-5 mx-auto">
+					<div className="w-full items-center justify-center lg:mx-36 lg:flex">
+						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md">
+							<Nuka name="electro" />
+						</div>
 
-							<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center px-5 md:px-0">
-								<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
-									Electro Mechanical Machinery Supply and Construction
-								</h1>
+						<div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col justify-around items-center">
+							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
+								Electro Mechanical Machinery Supply and Construction
+							</h1>
 
-								<div className="text-center">
-									<p className="leading-relaxed">
-										It is virtually impossible to list every single
-										electromechanical device. <br />
-									</p>
-									<div className="text-lg p-4">
-										Some of the most common Machineries used include:
-									</div>
+							<div className="text-center">
+								<p className="leading-relaxed">
+									It is virtually impossible to list every single
+									electromechanical device. <br />
+								</p>
+								<div className="text-lg p-4">
+									Some of the most common Machineries used include:
 								</div>
-								<ul className="md:ml-8 lg:ml-16 list-disc mb-12 lg:mb-0">
-									<li>Agriculture for Irrigation Systems,</li>
-									<li>Turn-key Energy Transformers and Generator Projects</li>
-									<li>Creshers like sand and Cement Projects,</li>
-									<li>Extra large hydropower Projects, etc...</li>
-								</ul>
 							</div>
+							<ul className="md:ml-8 lg:ml-16 list-disc mb-12 lg:mb-0">
+								<li>Agriculture for Irrigation Systems,</li>
+								<li>Turn-key Energy Transformers and Generator Projects</li>
+								<li>Creshers like sand and Cement Projects,</li>
+								<li>Extra large hydropower Projects, etc...</li>
+							</ul>
 						</div>
 					</div>
 				</div>
+				<div className="lg:pb-20 pb-8"></div>
 			</section>
 
 			{/* Construction Machineries */}
-			{/* <section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed bg-slate-800 px-10 md:px-0 pt-10"> */}
-			<section className="bg-slate-700 text-gray-400 pt-16 py-10 md:py-24">
-				<div className="container px-5 mx-auto flex flex-col justify-center items-center">
-					<div className="w-full flex flex-col lg:flex-row lg:gap-2 items-center justify-center">
-						<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center md:px-0">
+			<section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-kitchen-bg bg-cover bg-center bg-fixed bg-slate-800 lg:py-6">
+				<div className="container px-5 mx-auto bg-slate-800">
+					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
+						<div className="lg:w-1/2 w-full lg:pr-10 py-6 mt-6 lg:mt-12 flex flex-col justify-around items-center">
 							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
 								Construction Machineries
 							</h1>
@@ -171,8 +170,8 @@ const HomePage = () => {
 							</ul>
 						</div>
 
-						<div className="lg:basis-1/2 w-full overflow-hidden h-fit rounded-md">
-							<SwiperCarousel name="construction" />
+						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
+							<Nuka name="construction" />
 						</div>
 					</div>
 				</div>
@@ -180,17 +179,17 @@ const HomePage = () => {
 
 			{/* Waters Wells & Drilling Construction */}
 			<section
-				className="text-gray-400 pt-16 py-10 md:py-24"
-				style={{ backgroundImage: 'url("/assets/img/em-background.jpg")' }}
+				className="lg:h-fit lg:pb-16 lg:pt-12 h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
+				style={{ backgroundImage: 'url("/assets/img/home-background.jpg")' }}
 			>
-				<div className="container px-5 mx-auto flex flex-col justify-center items-center">
-					<div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-2 items-center justify-center">
-						<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center md:px-0">
-							{/* <Nuka name="drilling" /> */}
-							<SwiperCarousel name="drilling" />
+				<div className="pb-20"></div>
+				<div className="container px-5 mx-auto">
+					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
+						<div className="w-fit overflow-hidden h-fit rounded-md">
+							<Nuka name="drilling" />
 						</div>
 
-						<div className="lg:w-1/2 w-full lg:pr-10 pt-6 pb-24 flex flex-col justify-around items-center">
+						<div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col justify-evenly items-center">
 							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
 								Waters Wells & Drilling Construction
 							</h1>
