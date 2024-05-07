@@ -84,11 +84,11 @@ const HomePage = () => {
 
 			{/* Electro Mechanical */}
 			<section
-				className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
+				className="lg:h-fit h-auto flex flex-col justify-around items-center lg:gap-12 text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
 				style={{ backgroundImage: 'url("/assets/img/home-background.jpg")' }}
 			>
 				<div className="pt-20"></div>
-				<div className="flex justify-center items-center text-4xl font-medium underline text-white mb-12 lg:mb-0">
+				<div className="flex justify-center items-center text-5xl font-medium underline text-white mb-12 lg:mb-0">
 					<h2 className={`font-playfair pb-12 ${playfair.className}`}>
 						Products We Offer
 					</h2>
@@ -144,7 +144,7 @@ const HomePage = () => {
 									<br />
 								</p>
 
-								<div className="text-lg py-4 text-center">
+								<div className="text-lg font-semibold py-4 text-center">
 									Some of the machineries include:
 								</div>
 							</div>
@@ -179,7 +179,7 @@ const HomePage = () => {
 
 			{/* Waters Wells & Drilling Construction */}
 			<section
-				className="lg:h-fit lg:pb-16 lg:pt-12 h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
+				className="lg:h-fit lg:pb-20 lg:pt-12 h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-em-bg bg-cover bg-center bg-fixed"
 				style={{ backgroundImage: 'url("/assets/img/home-background.jpg")' }}
 			>
 				<div className="pb-20"></div>
@@ -211,7 +211,9 @@ const HomePage = () => {
 
 			{/* Testimonials */}
 			<section className="bg-slate-800">
-				<h1 className="font-bold font-playfair text-white text-2xl text-center pt-12 title-font underline underline-offset-8 lg:pb-24 mb-12 lg:mb-0">
+				<h1
+					className={`font-bold font-playfair text-white text-2xl text-center pt-12 title-font underline underline-offset-8 lg:pb-24 mb-12 lg:mb-0 ${playfair.className}`}
+				>
 					Companies we have worked with in the past
 				</h1>
 
