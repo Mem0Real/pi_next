@@ -96,7 +96,7 @@ const HomePage = () => {
 
 				<div className="container px-5 mx-auto">
 					<div className="w-full items-center justify-center lg:mx-36 lg:flex">
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md">
+						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md">
 							<Nuka name="electro" />
 						</div>
 
@@ -114,7 +114,7 @@ const HomePage = () => {
 									Some of the most common Machineries used include:
 								</div>
 							</div>
-							<ul className="md:ml-8 lg:ml-16 list-disc mb-12 lg:mb-0">
+							<ul className="ml-4 md:ml-8 lg:ml-16 list-disc mb-12 lg:mb-0">
 								<li>Agriculture for Irrigation Systems,</li>
 								<li>Turn-key Energy Transformers and Generator Projects</li>
 								<li>Creshers like sand and Cement Projects,</li>
@@ -170,7 +170,7 @@ const HomePage = () => {
 							</ul>
 						</div>
 
-						<div className="w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
+						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
 							<Nuka name="construction" />
 						</div>
 					</div>
@@ -185,7 +185,7 @@ const HomePage = () => {
 				<div className="pb-20"></div>
 				<div className="container px-5 mx-auto">
 					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="w-fit overflow-hidden h-fit rounded-md">
+						<div className="w-full md:w-fit overflow-hidden h-fit rounded-md">
 							<Nuka name="drilling" />
 						</div>
 
