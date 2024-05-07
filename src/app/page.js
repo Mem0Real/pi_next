@@ -96,7 +96,7 @@ const HomePage = () => {
 
 				<div className="container px-5 mx-auto">
 					<div className="w-full items-center justify-center lg:mx-36 lg:flex">
-						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md">
+						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md border border-neutral-300 ">
 							<Nuka name="electro" />
 						</div>
 
@@ -170,7 +170,7 @@ const HomePage = () => {
 							</ul>
 						</div>
 
-						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12">
+						<div className="w-full md:w-fit overflow-hidden lg:h-auto h-fit object-cover object-center rounded-md mb-12 border border-neutral-300 ">
 							<Nuka name="construction" />
 						</div>
 					</div>
@@ -185,7 +185,7 @@ const HomePage = () => {
 				<div className="pb-20"></div>
 				<div className="container px-5 mx-auto">
 					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="w-full md:w-fit overflow-hidden h-fit rounded-md">
+						<div className="w-full md:w-fit overflow-hidden h-fit rounded-md border border-neutral-300 ">
 							<Nuka name="drilling" />
 						</div>
 
