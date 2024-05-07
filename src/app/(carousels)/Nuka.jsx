@@ -28,10 +28,13 @@ const Nuka = ({ name }) => {
 			>
 				{name === "electro"
 					? electromechanical.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
+							<div
+								className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-md shadow-cyan-900"
+								key={item}
+							>
 								<Image
 									fill
-									src={`/assets/img/${name}/${item}.png`}
+									src={`/assets/img/${name}/${item}.webp`}
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 									alt={item}
 									className="object-contain object-center"
@@ -40,7 +43,10 @@ const Nuka = ({ name }) => {
 					  ))
 					: name === "construction"
 					? construction.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
+							<div
+								className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-xl shadow-cyan-900"
+								key={item}
+							>
 								<Image
 									fill
 									src={`/assets/img/${name}/${item}.png`}
@@ -51,7 +57,10 @@ const Nuka = ({ name }) => {
 							</div>
 					  ))
 					: drill.map((item) => (
-							<div className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
+							<div
+								className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-xl shadow-cyan-900"
+								key={item}
+							>
 								<Image
 									fill
 									src={`/assets/img/${name}/${item}.png`}
