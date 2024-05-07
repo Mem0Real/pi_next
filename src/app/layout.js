@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 const openSans = Open_Sans({ subsets: ["latin"], weight: ["300", "400"] });
 
 export const metadata = {
-	title: "Punctual Importer",
+	title: "Punctual Engineering",
 	description: "Importing various machineries from all over the world",
 };
 
