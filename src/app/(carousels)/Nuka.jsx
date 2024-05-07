@@ -4,10 +4,7 @@ import React from "react";
 import Carousel from "nuka-carousel";
 import Image from "next/image";
 
-const electromechanical = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
-
-const construction = ["chipper", "crane", "excavator", "forklift", "roller"];
-const drill = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
 const Nuka = ({ name }) => {
 	return (
@@ -24,46 +21,22 @@ const Nuka = ({ name }) => {
 					prevButtonText: "<",
 				}}
 				id={name}
-				className="rounded-xl"
+				className="rounded-xl text-white"
 			>
-				{name === "electro"
-					? electromechanical.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative" key={item}>
-								<Image
-									fill
-									src={`/assets/img/${name}/${item}.webp`}
-									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-									alt={item}
-									className="object-contain object-center"
-								/>
-							</div>
-					  ))
-					: name === "construction"
-					? construction.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative" key={item}>
-								<Image
-									fill
-									src={`/assets/img/${name}/${item}.png`}
-									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-									alt={item}
-									className="object-contain object-center"
-								/>
-							</div>
-					  ))
-					: drill.map((item) => (
-							<div
-								className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative"
-								key={item}
-							>
-								<Image
-									fill
-									src={`/assets/img/${name}/${item}.png`}
-									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-									alt={item}
-									className="object-contain object-center"
-								/>
-							</div>
-					  ))}
+				{images.map((item) => (
+					<div
+						className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative"
+						key={item}
+					>
+						<Image
+							fill
+							src={`/assets/img/${name}/${item}.webp`}
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							alt={item}
+							className="object-contain object-center"
+						/>
+					</div>
+				))}
 			</Carousel>
 		</div>
 	);

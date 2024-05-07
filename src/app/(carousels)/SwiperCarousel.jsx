@@ -80,7 +80,7 @@ export default function SwiperCarousel({ name }) {
 									<div className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative">
 										<Image
 											fill
-											src={`/assets/img/${name}/${item}.png`}
+											src={`/assets/img/${name}/${item}.webp`}
 											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 											alt={item}
 											className="object-contain object-center"
