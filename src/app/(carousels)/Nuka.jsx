@@ -28,7 +28,7 @@ const Nuka = ({ name }) => {
 			>
 				{name === "electro"
 					? electromechanical.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-xl shadow-cyan-900">
+							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
 								<Image
 									fill
 									src={`/assets/img/${name}/${item}.png`}
@@ -40,7 +40,7 @@ const Nuka = ({ name }) => {
 					  ))
 					: name === "construction"
 					? construction.map((item) => (
-							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-xl shadow-cyan-900">
+							<div className="h-64 md:h-64 lg:h-96 w-full relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
 								<Image
 									fill
 									src={`/assets/img/${name}/${item}.png`}
@@ -51,7 +51,7 @@ const Nuka = ({ name }) => {
 							</div>
 					  ))
 					: drill.map((item) => (
-							<div className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110 shadow-xl shadow-cyan-900">
+							<div className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative border-2 rounded-xl border-neutral-500  backdrop-brightness-110">
 								<Image
 									fill
 									src={`/assets/img/${name}/${item}.png`}
