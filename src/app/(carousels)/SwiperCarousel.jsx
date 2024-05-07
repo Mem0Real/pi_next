@@ -44,13 +44,13 @@ export default function SwiperCarousel({ name }) {
 					slidesPerView={1}
 					pagination={{ dynamicBullets: true, clickable: true }}
 					modules={[Navigation, Pagination, Autoplay]}
-					className="h-full w-full rounded-lg"
+					className="h-full w-full rounded-lg "
 					onSwiper={setControlledSwiper}
 				>
 					{name === "electro"
 						? electromechanical.map((item) => (
 								<SwiperSlide key={item}>
-									<div className="h-96 w-full relative">
+									<div className="h-64 md:h-64 lg:h-96 w-full relative">
 										<Image
 											fill
 											src={`/assets/img/${name}/${item}.png`}
@@ -64,7 +64,7 @@ export default function SwiperCarousel({ name }) {
 						: name === "construction"
 						? construction.map((item) => (
 								<SwiperSlide key={item}>
-									<div className="flex h-96 w-full justify-center items-center relative">
+									<div className="h-64 md:h-64 lg:h-96 w-full relative">
 										<Image
 											fill
 											src={`/assets/img/${name}/${item}.png`}
@@ -77,7 +77,7 @@ export default function SwiperCarousel({ name }) {
 						  ))
 						: drill.map((item) => (
 								<SwiperSlide key={item}>
-									<div className="flex h-96 w-full justify-center items-center relative">
+									<div className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative">
 										<Image
 											fill
 											src={`/assets/img/${name}/${item}.png`}

@@ -87,20 +87,20 @@ const HomePage = () => {
 				className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed py-10"
 				style={{ backgroundImage: 'url("/assets/img/em-background.jpg")' }}
 			>
-				<div className="flex flex-col justify-center items-center w-full gap-12 pt-12">
-					<div className="flex justify-center items-center text-4xl font-medium underline text-white mb-12 lg:mb-0">
+				<div className="flex flex-col justify-center items-center w-full md:gap-12 py-12">
+					<div className="flex justify-center items-center text-4xl font-medium underline text-white md:mb-4 lg:mb-0">
 						<h2 className={`font-playfair pb-12 ${playfair.className}`}>
 							Products We Offer
 						</h2>
 					</div>
+
 					<div className="container px-5 mx-auto flex flex-col justify-center items-center">
-						<div className="w-full lg:w-4/5 items-center justify-center flex flex-wrap">
-							<div className="lg:basis-1/2 w-full md:w-fit overflow-hidden h-fit rounded-md">
-								{/* <Nuka name="em" /> */}
+						<div className="w-full flex flex-col lg:flex-row lg:gap-2 items-center justify-center">
+							<div className="lg:basis-1/2 w-full overflow-hidden h-fit rounded-md">
 								<SwiperCarousel name="electro" />
 							</div>
 
-							<div className="lg:w-1/2 w-full lg:pr-10 pt-6 pb-24 flex flex-col justify-around items-center px-5 md:px-0">
+							<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center px-5 md:px-0">
 								<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
 									Electro Mechanical Machinery Supply and Construction
 								</h1>
@@ -114,7 +114,7 @@ const HomePage = () => {
 										Some of the most common Machineries used include:
 									</div>
 								</div>
-								<ul className="list-disc mb-12 lg:mb-0">
+								<ul className="md:ml-8 lg:ml-16 list-disc mb-12 lg:mb-0">
 									<li>Agriculture for Irrigation Systems,</li>
 									<li>Turn-key Energy Transformers and Generator Projects</li>
 									<li>Creshers like sand and Cement Projects,</li>
@@ -127,10 +127,11 @@ const HomePage = () => {
 			</section>
 
 			{/* Construction Machineries */}
-			<section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed bg-slate-800 px-10 md:px-0 pt-10">
+			{/* <section className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed bg-slate-800 px-10 md:px-0 pt-10"> */}
+			<section className="bg-slate-700 text-gray-400 pt-16 py-10 md:py-24">
 				<div className="container px-5 mx-auto flex flex-col justify-center items-center">
-					<div className="bg-slate-800 lg:w-11/12 w-full items-center justify-center flex flex-col lg:flex-row gap-0 md:gap-2 lg:gap-6">
-						<div className="lg:w-1/2 w-full lg:pr-10 pt-6 lg:pb-24 flex flex-col justify-around items-center">
+					<div className="w-full flex flex-col lg:flex-row lg:gap-2 items-center justify-center">
+						<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center md:px-0">
 							<h1 className="text-white text-2xl text-center title-font font-medium mb-1 underline underline-offset-8 pb-8">
 								Construction Machineries
 							</h1>
@@ -149,7 +150,7 @@ const HomePage = () => {
 								</div>
 							</div>
 
-							<ul className={`${styles.listRoman} lg:pl-6`}>
+							<ul className={`${styles.listRoman} pl-6`}>
 								<li>
 									Chippers with different mechanisms like Disk Chippers, Drum
 									Chippers, PTO Chippers, etc...
@@ -170,8 +171,7 @@ const HomePage = () => {
 							</ul>
 						</div>
 
-						<div className="basis-1/2 w-full overflow-hidden h-fit rounded-md mb-20 lg:mb-0">
-							{/* <Nuka name="construction" /> */}
+						<div className="lg:basis-1/2 w-full overflow-hidden h-fit rounded-md">
 							<SwiperCarousel name="construction" />
 						</div>
 					</div>
@@ -180,13 +180,12 @@ const HomePage = () => {
 
 			{/* Waters Wells & Drilling Construction */}
 			<section
-				className="lg:h-fit h-auto flex flex-col justify-around items-center text-gray-400 body-font overflow-hidden bg-cover bg-center bg-fixed pb-20"
+				className="text-gray-400 pt-16 py-10 md:py-24"
 				style={{ backgroundImage: 'url("/assets/img/em-background.jpg")' }}
 			>
-				<div className="pt-20"></div>
-				<div className="container px-5 mx-auto">
-					<div className="lg:w-4/5 w-full items-center justify-center lg:mx-36 flex flex-wrap">
-						<div className="basis-1/2 w-fit overflow-hidden h-fit rounded-md">
+				<div className="container px-5 mx-auto flex flex-col justify-center items-center">
+					<div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-2 items-center justify-center">
+						<div className="lg:basis-1/2 lg:w-1/2 w-full lg:pr-10 flex flex-col justify-center items-center md:px-0">
 							{/* <Nuka name="drilling" /> */}
 							<SwiperCarousel name="drilling" />
 						</div>
