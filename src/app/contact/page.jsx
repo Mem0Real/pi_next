@@ -105,8 +105,8 @@ export default function Contact() {
 								height="100%"
 								title="map"
 								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15762.574794341912!2d38.767084!3d9.004895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x941677a8f60160fe!2sDembel%20City%20Center!5e0!3m2!1sen!2set!4v1665933195534!5m2!1sen!2set"
-								allowfullscreen=""
-								loading="lazy"
+								allowFullScreen=""
+								loading="eager"
 							></iframe>
 						</span>
 					</div>
