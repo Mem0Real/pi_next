@@ -13,7 +13,7 @@ export default function Contact() {
 	const [bodyContent, setBodyContent] = useState("");
 	const [loader, setLoader] = useState(false);
 
-	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+	const __dirName = `/assets/img`;
 
 	const form = useRef();
 	const modal = useRef();

@@ -10,7 +10,7 @@ import { motion, useScroll } from "framer-motion";
 import Nav from "./Nav";
 
 export default function NavbarBase() {
-	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+	const __dirName = `/assets/img`;
 
 	const [hidden, setHidden] = useState(false);
 

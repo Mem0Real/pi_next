@@ -8,7 +8,7 @@ const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 const electro = ["11", "12", "13", "14", "15", "16"];
 
 const Nuka = ({ name }) => {
-	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+	const __dirName = `/assets/img`;
 
 	return (
 		<div className="w-auto sm:w-auto xs:w-auto md:w-96 h-fit">

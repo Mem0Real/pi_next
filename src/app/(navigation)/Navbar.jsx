@@ -14,7 +14,7 @@ const roboto = Roboto({
 });
 
 const Navbar = () => {
-	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+	const __dirName = `/assets/img`;
 
 	const [menu, setMenu] = useState(false);
 	const [pathName, setPathName] = useState("");
