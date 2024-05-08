@@ -61,7 +61,7 @@ const HomePage = () => {
 			{/* Hero */}
 			<section className="h-screen section">
 				<div
-					className="hero min-h-screen bg-fixed z-10 bg-no-repeat bg-right-bottom "
+					className="hero min-h-screen bg-fixed z-10 bg-no-repeat bg-right-bottom contrast-125 brightness-75"
 					style={{
 						backgroundImage: 'url("/assets/img/hero4.jpg")',
 					}}
