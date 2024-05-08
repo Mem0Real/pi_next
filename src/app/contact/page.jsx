@@ -270,7 +270,7 @@ export default function Contact() {
 												role="status"
 											>
 												<Image
-													src={`${dirName}/spinner.png`}
+													src={`${__dirName}/spinner.png`}
 													width={200}
 													height={200}
 													alt="Loading..."
