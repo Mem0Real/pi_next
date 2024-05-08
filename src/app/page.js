@@ -11,7 +11,6 @@ import Nuka from "./(carousels)/Nuka";
 import Marquee from "react-fast-marquee";
 
 import { Playfair, Roboto } from "next/font/google";
-import SwiperCarousel from "./(carousels)/SwiperCarousel";
 
 const playfair = Playfair({
 	subsets: ["latin"],
