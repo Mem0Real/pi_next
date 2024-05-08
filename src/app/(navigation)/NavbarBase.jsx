@@ -10,6 +10,8 @@ import { motion, useScroll } from "framer-motion";
 import Nav from "./Nav";
 
 export default function NavbarBase() {
+	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+
 	const [hidden, setHidden] = useState(false);
 
 	const { scrollY } = useScroll();
@@ -51,7 +53,7 @@ export default function NavbarBase() {
 					<div className="relative flex justify-start items-start">
 						<div className="relative h-20 w-36">
 							<Image
-								src="/assets/img/logo1.jpg"
+								src={`${__dirName}/logo1.jpg`}
 								alt="logo"
 								fill
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

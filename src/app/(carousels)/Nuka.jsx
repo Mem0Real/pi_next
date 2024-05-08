@@ -8,6 +8,8 @@ const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 const electro = ["11", "12", "13", "14", "15", "16"];
 
 const Nuka = ({ name }) => {
+	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
+
 	return (
 		<div className="w-auto sm:w-auto xs:w-auto md:w-96 h-fit">
 			<Carousel
@@ -31,7 +33,7 @@ const Nuka = ({ name }) => {
 					>
 						<Image
 							fill
-							src={`/assets/img/${name}/${item}.webp`}
+							src={`${__dirName}/${name}/${item}.webp`}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							alt={item}
 							className="object-contain object-center"
@@ -46,7 +48,7 @@ const Nuka = ({ name }) => {
 						>
 							<Image
 								fill
-								src={`/assets/img/${name}/${item}.webp`}
+								src={`${__dirName}/${name}/${item}.webp`}
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								alt={item}
 								className="object-contain object-center"

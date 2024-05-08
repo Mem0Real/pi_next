@@ -13,7 +13,7 @@ export default function Contact() {
 	const [bodyContent, setBodyContent] = useState("");
 	const [loader, setLoader] = useState(false);
 
-	const __dirName = `/assets/img`;
+	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
 
 	const form = useRef();
 	const modal = useRef();
@@ -270,7 +270,7 @@ export default function Contact() {
 												role="status"
 											>
 												<Image
-													src="/assets/img/spinner.png"
+													src={`${dirName}/spinner.png`}
 													width={200}
 													height={200}
 													alt="Loading..."

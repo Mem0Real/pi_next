@@ -5,7 +5,7 @@ import Image from "next/image";
 const audioWide = Audiowide({ subsets: ["latin"], weight: "400" });
 
 export default function Services() {
-	const __dirName = `/assets/img`;
+	const __dirName = `${process.env.PUBLIC_URL}/assets/img`;
 
 	return (
 		<div
