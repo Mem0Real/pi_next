@@ -61,14 +61,16 @@ const HomePage = () => {
 			{/* Hero */}
 			<section className="h-screen section">
 				<div
-					className="hero min-h-screen bg-home-img bg-fixed z-10"
-					style={{ backgroundImage: 'url("/assets/img/hero2.jpg")' }}
+					className="hero min-h-screen bg-fixed z-10 bg-no-repeat bg-right-bottom "
+					style={{
+						backgroundImage: 'url("/assets/img/hero4.jpg")',
+					}}
 				>
-					<div className="hero-overlay bg-opacity-30"></div>
+					<div className="hero-overlay bg-opacity-70"></div>
 					<div
 						className={`hero-content text-center text-neutral-content ${playfair.className}`}
 					>
-						<div className="max-w-md flex flex-col justify-center items-center font-playfair tracking-widest shadow-lg rounded-large shadow-cyan-900 text-white">
+						<div className="max-w-md flex flex-col justify-center items-center font-playfair tracking-widest shadow-lg rounded-large shadow-cyan-900 text-white backdrop-brightness-75 mt-16 md:mt-0">
 							<h1 className="mb-5 text-5xl font-bold">Welcome</h1>
 							<h1 className="mb-5 text-5xl font-bold">To</h1>
 							<h1 className="mb-5 text-5xl font-bold">Punctual Engineering</h1>

@@ -5,6 +5,7 @@ import Carousel from "nuka-carousel";
 import Image from "next/image";
 
 const images = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+const electro = ["11", "12", "13", "14", "15", "16"];
 
 const Nuka = ({ name }) => {
 	return (
@@ -37,6 +38,21 @@ const Nuka = ({ name }) => {
 						/>
 					</div>
 				))}
+				{name === "electro" &&
+					electro.map((item) => (
+						<div
+							className="flex h-64 md:h-64 lg:h-96 w-full justify-center items-center relative"
+							key={item}
+						>
+							<Image
+								fill
+								src={`/assets/img/${name}/${item}.webp`}
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+								alt={item}
+								className="object-contain object-center"
+							/>
+						</div>
+					))}
 			</Carousel>
 		</div>
 	);
