@@ -62,7 +62,7 @@ const HomePage = () => {
 			<section className="h-screen section">
 				<div
 					className="hero min-h-screen bg-home-img bg-fixed z-10"
-					style={{ backgroundImage: 'url("/assets/img/hero1.jpg")' }}
+					style={{ backgroundImage: 'url("/assets/img/hero2.jpg")' }}
 				>
 					<div className="hero-overlay bg-opacity-30"></div>
 					<div

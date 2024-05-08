@@ -43,10 +43,15 @@ export default function About() {
 								system.
 							</p>
 
-							<p className="text-gray-200 lg:mt-12 text-xl">
-								These various ventures include:
+							<p className="text-gray-200 lg:mt-12 text-3xl">
+								Our main business focus lays in:
 							</p>
-							<div className="flex justify-center items-center pb-12">
+							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 text-center mx-auto w-full text-gray-200 dark:text-gray-400">
+								<li className="flex items-center justify-center mr-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
+									Importing Distribution of:
+								</li>
+
+								{/* <div className="flex justify-center items-center pb-12">
 								<ul className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
 									<li className="flex items-center space-x-3">
 										<svg
@@ -127,7 +132,147 @@ export default function About() {
 										</span>
 									</li>
 								</ul>
-							</div>
+							</div> */}
+								<div className="flex justify-center items-center pb-12">
+									<ul className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+
+											<span>Construction Machineries,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>Generators and Pumps,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>UPS and AVR,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>Transformers,</span>
+										</li>
+									</ul>
+								</div>
+							</ol>
+
+							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
+								<li className="flex items-center justify-center mr-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
+									Constructions:
+								</li>
+
+								<div className="flex justify-center items-center pb-12">
+									<ul className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+
+											<span>Water well drill construction,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>Electro-Mechanical Construction,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>Water Construction,</span>
+										</li>
+										<li className="flex items-center space-x-3">
+											<svg
+												className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													fillRule="evenodd"
+													d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+													clipRule="evenodd"
+												></path>
+											</svg>
+											<span>
+												Generators and Energy Turnkey projects construction,
+											</span>
+										</li>
+									</ul>
+								</div>
+							</ol>
 						</div>
 					</div>
 				</div>
