@@ -43,12 +43,14 @@ export default function About() {
 								system.
 							</p>
 
-							<p className="text-gray-200 lg:mt-12 text-3xl">
+							<p className="text-gray-200 mt-8 lg:pt-24 lg:pb-6 text-4xl">
 								Our main business focus lays in:
 							</p>
-							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 text-center mx-auto w-full text-gray-200 dark:text-gray-400">
-								<li className="flex items-center justify-center mr-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
-									Importing Distribution of:
+							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 mx-auto w-full text-gray-200 dark:text-gray-400">
+								<li className="flex items-center justify-center pl-8 lg:pl-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
+									<span className="w-full text-start text-3xl font-bold">
+										Importing Distribution of:
+									</span>
 								</li>
 
 								{/* <div className="flex justify-center items-center pb-12">
@@ -133,7 +135,7 @@ export default function About() {
 									</li>
 								</ul>
 							</div> */}
-								<div className="flex justify-center items-center pb-12">
+								<div className="flex justify-between md:pl-12 lg:pl-48 lg:justify-start items-center pb-12 w-full">
 									<ul className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
 										<li className="flex items-center space-x-3">
 											<svg
@@ -200,12 +202,14 @@ export default function About() {
 								</div>
 							</ol>
 
-							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
-								<li className="flex items-center justify-center mr-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
-									Constructions:
+							<ol className="mt-8 backdrop-blur-md mb-8 space-y-4 mx-auto w-full text-gray-200 dark:text-gray-400">
+								<li className="flex items-center justify-center pl-8 lg:pl-36 text-xl font-semibold -mb-5 pt-12 space-x-3">
+									<span className="w-full text-start text-3xl font-bold">
+										Constructions:
+									</span>
 								</li>
 
-								<div className="flex justify-center items-center pb-12">
+								<div className="flex justify-between md:pl-12 lg:pl-48 lg:justify-start items-center pb-2 md:pb-12 w-full">
 									<ul className="mt-8 backdrop-blur-md mb-8 space-y-4 text-left text-gray-200 dark:text-gray-400">
 										<li className="flex items-center space-x-3">
 											<svg
@@ -284,12 +288,12 @@ export default function About() {
 				{/* Responsive bg for mobile */}
 				{isMobile ? (
 					<div
-						className="h-72 bg-about-bg bg-fixed bg-cover bg-left-top"
+						className="h-fitbg-about-bg bg-fixed bg-cover bg-left-top"
 						style={{ backgroundImage: 'url("/assets/img/about1-bg.jpg")' }}
 					></div>
 				) : null}
 
-				<div className="container px-5 py-2 mx-auto ">
+				<div className="container px-5 mx-auto py-24 lg:py-12">
 					<div className="lg:h-fit flex flex-col gap-12 flex-wrap lg:justify-end lg:items-end sm:justify-center sm:items-center lg:mr-6 lg:pt-6 lg:mb-6">
 						<div className="p-4 sm:w-auto overflow-hidden md:w-fit shadow-md shadow-black rounded-3xl md:h-fit">
 							<div className="flex h-full bg-black bg-opacity-80 rounded-3xl p-8 flex-col">
