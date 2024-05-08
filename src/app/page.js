@@ -70,7 +70,7 @@ const HomePage = () => {
 					<div
 						className={`hero-content text-center text-neutral-content ${playfair.className}`}
 					>
-						<div className="max-w-md flex flex-col justify-center items-center font-playfair tracking-widest shadow-lg rounded-large shadow-cyan-900 text-white backdrop-brightness-75 mt-6 md:mt-0">
+						<div className="max-w-md flex flex-col justify-center items-center font-playfair tracking-widest shadow-lg rounded-large shadow-cyan-900 text-white backdrop-brightness-75">
 							<h1 className="mb-5 text-5xl font-bold">Welcome</h1>
 							<h1 className="mb-5 text-5xl font-bold">To</h1>
 							<h1 className="mb-5 text-5xl font-bold">Punctual Engineering</h1>
