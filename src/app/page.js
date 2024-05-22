@@ -78,8 +78,8 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-			<section className="lg:h-24 bg-gray-300 text-black">
-				<div className="text-3xl flex items-center justify-center text-center lg:h-24 font-poppins">
+			<section className="lg:h-36 h-24 bg-gray-300 text-black">
+				<div className="text-3xl flex items-center justify-center text-center h-24 lg:h-36 font-poppins">
 					Fulfilling your machinery needs exactly at the right time.
 				</div>
 			</section>

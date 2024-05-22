@@ -44,24 +44,24 @@ export default function NavbarBase() {
 			className={`fixed w-full h-[95px] navbar  ${
 				path === "/contact"
 					? "bg-neutral-900/80 shadow-cyan-900"
-					: "bg-transparent shadow-cyan-900"
+					: "bg-neutral-900/80 shadow-cyan-900"
 			} border-b border-neutral-600/60 backdrop-blur-md shadow-md z-30
 		`}
 		>
 			<div className="relative md:flex justify-between md:justify-normal items-center w-full text-sm">
-				<Link href="/">
-					<div className="relative flex justify-start items-start">
-						<div className="ml-5 relative h-20 w-20 backdrop-blur-md bg-black/30 rounded-full">
-							<Image
-								src={`${__dirName}/logo.png`}
-								alt="logo"
-								fill
-								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-								className="cursor-pointer object-cover h-20 w-36 mt-2"
-								priority
-							/>
-						</div>
+				<Link href="/" className="relative flex justify-start items-start">
+					{/* <div className="relative flex justify-start items-start"> */}
+					<div className="relative h-[100px] w-40 -mt-2">
+						<Image
+							src={`${__dirName}/logo.png`}
+							alt="logo"
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							className="cursor-pointer object-contain object-center px-1"
+							priority
+						/>
 					</div>
+					{/* </div> */}
 				</Link>
 				<div className="flex flex-col justify-end w-full">
 					<Nav hidden={hidden} />
