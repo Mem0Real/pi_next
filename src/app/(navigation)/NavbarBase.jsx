@@ -51,13 +51,13 @@ export default function NavbarBase() {
 			<div className="relative md:flex justify-between md:justify-normal items-center w-full text-sm">
 				<Link href="/">
 					<div className="relative flex justify-start items-start">
-						<div className="relative h-20 w-36">
+						<div className="ml-5 relative h-20 w-20 backdrop-blur-md bg-black/30 rounded-full">
 							<Image
-								src={`${__dirName}/logo1.jpg`}
+								src={`${__dirName}/logo.png`}
 								alt="logo"
 								fill
 								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-								className="cursor-pointer object-cover h-20 w-36 rounded-r-full mt-2"
+								className="cursor-pointer object-cover h-20 w-36 mt-2"
 								priority
 							/>
 						</div>

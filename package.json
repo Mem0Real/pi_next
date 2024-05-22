@@ -1,30 +1,30 @@
 {
-  "name": "pi_next",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@emailjs/browser": "^4.3.3",
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
-    "framer-motion": "^11.1.7",
-    "next": "14.2.3",
-    "nuka-carousel": "^7.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18",
-    "react-fast-marquee": "^1.6.4",
-    "react-hot-toast": "^2.4.1",
-    "react-responsive": "^10.0.0",
-    "react-router": "^6.23.0",
-    "react-router-dom": "^6.23.0"
-  },
-  "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1"
-  }
+	"name": "pi_next",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "NODE_ENV=production node server.js",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emailjs/browser": "^4.3.3",
+		"@popperjs/core": "^2.11.8",
+		"bootstrap": "^5.3.3",
+		"framer-motion": "^11.1.7",
+		"next": "14.2.3",
+		"nuka-carousel": "^7.0.0",
+		"react": "^18.3.1",
+		"react-dom": "^18",
+		"react-fast-marquee": "^1.6.4",
+		"react-hot-toast": "^2.4.1",
+		"react-responsive": "^10.0.0",
+		"react-router": "^6.23.0",
+		"react-router-dom": "^6.23.0"
+	},
+	"devDependencies": {
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1"
+	}
 }
