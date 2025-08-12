@@ -62,7 +62,7 @@ const HomePage = () => {
 				<div
 					className="hero min-h-screen bg-fixed z-10 bg-no-repeat bg-center contrast-125 brightness-75"
 					style={{
-						backgroundImage: 'url("/assets/img/hero4.jpg")',
+						backgroundImage: 'url("public/assets/img/hero4.jpg")',
 						backgroundPositionY: "top",
 					}}
 				>
